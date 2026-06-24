@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        body,html {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #f8f8f8;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+           
+            fontsize: 1.5em;
+            form-weight: bold;
+            font-family: 'Arial', sans-serif;
+        }
+        main {
+            padding: 20px;
+        }
+        aside {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        section {
+            margin-top: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        header a {
+            margin: 0 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th,td:hover{
+            background-color: #f1f1f1;
+            color: #000;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        li {
+            margin-bottom: 5px;
+
+        }
+        form {
+            margin-top: 20px;
+        color:white;
+
+        }
+        form input[type="email"],
+        form input[type="password"] {
+            padding: 8px;
+            margin: 5px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            padding: 10px 15px;
+            background-color: #131313;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #212020;
+            transition: background-color 0.3s ease;
+            transform: scale(1.05);
+        }
+        main p {
+            font-size: 1.2em;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @media (max-width: 600px) {
+            body, html {
+                flex-direction: column;
+            }
+            aside {
+                margin-top: 10px;
+            }
+            header, footer {
+                font-size: 0.9em;
+            }
+            section {
+                margin-top: 10px;
+            }
+            a {
+                display: block;
+                margin: 5px 0;
+            }
+            br {
+                display: none;
+            }
+            table {
+                font-size: 0.9em;
+            }
+            th, td {
+                padding: 6px;
+            }
+            button {
+                width: 100%;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                text-align: center;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                background:linear-gradient(right, #4CAF50, #345936, #178817, #0eb80e);
+                color: white;
+            }
+            form {
+                margin-top: 10px;
+            }
+            input[type="email"],
+            input[type="password"] {
+                width: 100%;
+                padding: 6px;
+            }
+            input[type="submit"] {
+                width: 100%;
+                padding: 8px;
+                background-color: #131313;
+                color: white;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                transform: scale(1.05);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <a href="Forms/Form.html">Form Example</a>
+        <a href="Image%26Links/image.html">Image Example</a>
+        <a href="Tables/Tables.html">Table Example</a>
+        <a href="Image%26Links/links.html">Link Example</a>
+
+    </header>
+    <main>
+        <p><i>This is a simple website.</i></p>
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Description</th>    
+            </tr>
+            <tr>
+                <td>Forms</td>
+                <td>Examples of different types of forms.</td>
+            </tr>
+            <tr>
+                <td>Images</td>
+                <td>Examples of images and how to use them.</td>
+            </tr>
+            <tr>
+                <td>Tables</td>
+                <td>Examples of tables and their usage.</td>
+            </tr>
+            </table>
+    </main>
+    <aside>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="Forms/Form.html">Form Example</a></li>
+            <li><a href="Image%26Links/image.html">Image Example</a></li>
+            <li><a href="Tables/Tables.html">Table Example</a></li>
+            <li><a href="Image%26Links/links.html">Link Example</a></li>
+            <ul type="circle">
+                <li><a href="Forms/All-Forms-Combine.html">All Forms Combined</a></li>
+                <li><a href="Forms/Mix-Forms.html">Mixed Forms</a></li>
+            </ul>
+        </ul>
+    </aside>
+
+    <section>
+  <form>
+  <div style="margin: 20px; border: 1px solid #ccc; padding: 20px; border-radius: 5px; background-color: #f9f9f9; text-align: center; font-family: Arial, sans-serif; font-size: 25px; background-image: linear-gradient(to right, #4CAF50, #345936, #1f211f, #1b1c1b); " >
+      email: <input type="email" name="email" required><br><br>
+    password: <input type="password" name="password" required><br><br>
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 My Website</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Forms Combined</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 40px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 200px;
+            padding: 5px;
+        }
+        input[type="submit"] {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+   <div>
+    <h1>Form Example</h1>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h1>Price Form</h1>
+    <form action="/submit-price" method="post">
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" step="0.01" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h1>Company Form</h1>
+    <form action="/submit-company" method="post">
+        <label for="company-name">Company Name:</label>
+        <input type="text" id="company-name" name="company-name" required>
+        <br><br>
+        <label for="company-email">Company Email:</label>
+        <input type="email" id="company-email" name="company-email" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+   </div>
+</body>
+</html>
